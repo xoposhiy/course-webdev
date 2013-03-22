@@ -40,7 +40,7 @@ HTML и CSS
 
 ![Макет 9-grid](/html-css/9grid.png)
 
-[Исходный Html](/html-css/9grid.txt)
+[Исходный Html](/html-css/9grid.html)
 
 
 Задача 3
