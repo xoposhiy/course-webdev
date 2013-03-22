@@ -58,3 +58,10 @@ var date = cal.getDate();
 ------
 JS шаблонизаторы. 
 knockout.js — на домашнее освоение.
+
+
+Для более глубокого изучения
+------------
+1. http://learn.javascript.ru
+2. http://stackoverflow.com/questions/11246/best-resources-to-learn-javascript
+3. Курс КРИПИ (следите за объявлениями в сентябре!) http://cripi.ru/#javascript
