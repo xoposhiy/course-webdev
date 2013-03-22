@@ -1,2 +1,7 @@
-course-webdev
+Курс "Веб-разработка. Начало"
 =============
+
+* [День первый. HTML и CSS](html-css.md)
+* [День второй. Javascript](js.md)
+* [День третий. ASP.NET MVC](asp-net-mvc.md)
+* День четвертный. Практикум.
