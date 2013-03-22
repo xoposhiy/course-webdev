@@ -56,7 +56,7 @@ var date = cal.getDate();
 Теория
 ------
 JS шаблонизаторы. 
-knockout.js — на домашнее освоение.
+knockout.js — на домашнее освоение: http://learn.knockoutjs.com
 
 
 Для более глубокого изучения
