@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	
+	* {
+		font-family: Consolas;
+		font-size: 10pt;
+	}
+	p, h1, li, a { 
+		font-family: Calibri; 
+	}
+	p, li, a {
+		font-size: 14pt;
+	}
+	a {
+		color: #6666ee;
+	}
+	h1, h1 a{
+		font-size: 32pt;
+		padding-top: 30px;
+	}
+	.menu-list{
+		margin-top:0;
+		margin-bottom:0;
+	}
+	.menu-list li {
+		display: inline;
+		margin-left: 40px;
+	}
+	body {
+		background: #eeeeee;
+		padding-bottom:100px;
+		width:1000px;
+		
+	}
+	div {
+		color: white;
+		background: black;
+		padding: 10px;
+		margin: 10px;
+	}
+	span {
+		color: black;
+		background: #aaaaff;
+	}
+	</style>
+</head>
+
+<body>
+<div style="position:fixed; top:0; left:1000px;background:none;padding-top:0;margin-top:0;">
+<h1 style="color:black">Legend</h1>
+<div>
+block
+<div style="background:grey">block</div>
+<div style="background:#55f">block</div>
+<span>inline</span>
+<span>inline</span>
+<span>inline</span>
+</div>
+</div>
+
+
+
+
+
+
+
+<a name="static"></a>
+<h1>position: static (default value)</h1>
+
+<div>
+ <span style="width:500px; height: 200px;">width:500px; height:200px;</span>
+ <span style="left:100px; top:100px;">left:100px; top:100px;</span>
+ <span style="font-size:2em">BIG</span>
+ <span style="font-size:0.7em">small</span>
+ <span style="padding:30px">padding: 30px</span> <span style="padding:5px">padding: 5px</span>
+ <span style="margin:20px">margin: 20px</span>
+</div>
+<ul>
+	<li>Inline's (left|right|top|bottom|width|height) are ignored.</li>
+	<li>Inline's padding is used.</li>
+	<li>Inline's margin is used but horizontal only!</li>
+</ul>
+<div>
+<span style="line-height:50px">line-height:50px — make containing div higher!</span>
+</div>
+<ul>
+	<li>Blocks takes all width of parent block and flow from top to bottom.</li>
+</ul>
+
+<div style="left:500px;top:500px; width:200px; height:50px;margin:50px;padding:50px;">left:500px;top:500px; width:200px; height:200px; margin:50px; padding:50px;</div>
+<ul>
+	<li>Block's (left|top|right|bottom) are ignored.</li>
+	<li>Block's (width|height|margin|padding) are used.</li>
+</ul>
+
+
+<div style="width:130px; height:70px">
+<span>inline</span> <span>blocks</span> <span>flow</span> <span>from</span> <span>left to right</span> <span>and</span>  <span>from top to bottom</span>
+<span>and</span> <span>content</span> <span>can</span> <span>overflow</span> <span>containing</span> <span>div</span> <span>element</span>
+</div>
+
+<div>
+<span>oh! no! overflow is dangerous!</span>
+<span>But it can be controled with CSS overflow property. See CSS Reference</span>
+</div>
+
+<div style="padding:0">
+	padding:0; &#8594; bottom margin collapsing.
+	<div style="background:grey">child div</div>
+</div>
+<div style="width:400px; height:200px">
+	How to center div? fixed width + auto margin!
+	<div style="background:gray;width:100px; height:100px;margin:auto;">width:100px; height:100px; margin:auto</div>
+</div>
+<ul>
+	<li>margin:auto — sets horizontal margins only.</li>
+</ul>
+
+
+
+
+
+<a name="relative"></a>
+<h1>position: relative</h1>
+<div>1</div>
+<div style="background:grey;opacity:.9;position:relative;left:-5px;top:-20px;width:600px;height:40px;">position:relative; left:-5px; top:-20px; width:600px; height:40px;</div>
+<div>3</div>
+<div style="background:grey;opacity:.9;position:relative;left:20px;right:-20px; top:20px;bottom:-20px;">position:relative; left:20px; right:-20px; top:20px; bottom:-20px;</div>
+<div>5</div>
+<ul>
+	<li>Preserve space in the static flow.</li>
+	<li>Can not use both left and right, or both top and bottom.</li>
+</ul>
+
+
+
+
+
+
+<a name="absolute"></a>
+<h1>position: absolute</h1>
+<div style="position:relative;background:gray">
+position:relative
+	<div style="height:100px">blue block is inside this one... But absolute position is relative closest non-static parent block.
+		<div style="background:#5555ff;position:absolute; right:5px; bottom:5px;">position:absolute; right:5px; bottom:5px;</div>
+	</div>
+</div>
+<ul>
+	<li>Often relative positioning is used together with ablosute position: parent is relative, child is absolute.</li>
+	<li>Absolutely positioned block is excluded from the flow.</li>
+</ul>
+
+<div style="background:gray;position:relative; width:800px; height:200px;">
+position:relative; width:800px; height:200px;
+	<div style="position:absolute; left:10px; right:200px; top:30px; bottom:30px;">position:absolute; left:10px; right:200px; top:30px; bottom:30px;</div>
+	<div style="background:#5555ff;position:absolute; left:33%; height:50%; right:0; bottom:0;margin:0;padding:0">position:absolute; left:33%; right:0; bottom:0; height:50%;</div>
+</div>
+<ul>
+	<li>Both left and right (both top and bottom) can be used together.</li>
+	<li>% (of the closed non-static parent block's size) can be ised in left|right|top|bottom|height|width.</li>
+</ul>
+
+
+
+
+
+
+<a name="fixed"></a>
+<h1>position: fixed</h1>
+Upper menu-bar with links is an example of fixed positioning.
+<br>
+Its style is: position:fixed; left:0px;top:0px;width:100%;
+
+<div style="background:lightgray;color:black; position:fixed; left:0px;top:0px;width:100%;margin:0">
+<ul class="menu-list">
+	<li><a href="#static">static</a></li>
+	<li><a href="#relative">relative</a></li>
+	<li><a href="#absolute">absolute</a></li>
+	<li><a href="#fixed">fixed</a></li>
+	<li><a href="#float">float</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+<a name="float"></a>
+<h1>float</h2>
+<div>
+	<div style="background:gray;float:left">1. float:left</div>
+	<div style="background:gray;float:left">2. float:left</div>
+	<div style="background:gray;float:right">3. float:right</div>
+	some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+	some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+	some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+	some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+	some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+</div>
+
+<div style="height:300px; width:400px;">
+	<div style="background:gray;float:left; height:40px;">1. float:left</div>
+	<div style="background:gray;float:left; height:60px;">2. float:left</div>
+	<div style="background:gray;float:left;">3. float:left</div>
+	<div style="background:gray;float:left;">4. float:left</div>
+	<div style="background:gray;float:left; height:60px;">5. float:left</div>
+	<div style="background:gray;float:left;">6. float:left</div>
+	<div style="background:gray;float:left; height:30px;">7. float:left</div>
+	<div style="background:gray;float:left;">8. float:left</div>
+	<div style="background:gray;float:left;">9. float:left</div>
+	<div style="background:gray;float:left;">10. float:left</div>
+	<div style="background:gray;float:left;">11. float:left</div>
+</div>
+
+
+<div>
+	small amount of content
+	<div style="background:gray;float:left; height:40px;">1. float:left</div>
+	<div style="background:gray;float:left; height:60px;">2. float:left</div>
+</div>
+<ul style="clear:both">
+	<li>Floats are excluded from the flow.</li>
+</ul>
+<div>
+	<div style="background:gray;clear:both;">3. clear:both</div>
+	small amount of content
+	<div style="background:gray;float:left; height:40px;">1. float:left</div>
+	<div style="background:gray;float:left; height:60px;">2. float:left</div>
+	<div style="background:gray;clear:both;">3. clear:both</div>
+</div>
+<ul>
+	<li>clear:(left|right|both) disables float</li>
+</ul>
+<div style="padding:0">
+	padding:0; &#8594; bottom margin collapsing...
+	<div style="background:grey; clear:both">clear:both; ...not for the floats!</div>
+</div>
+
+<div style="float:left;">float:left; &#8594; no margin collapsing</div>
+<div style="margin-left:300px">not floating div</div>
+
+<ul style="clear:both;">
+	<li>clear:(left|right|both) disables marging collapsing with floats</li>
+</ul>
+
+</body>
+</html>

@@ -24,9 +24,10 @@ HTML и CSS
 -------
 Введение про [Reset.css](http://habrahabr.ru/post/45296/)
 
-[Box model](http://www.w3.org/TR/CSS2/box.html)
+[Box model](http://www.w3.org/TR/CSS2/box.html). Вот [html для самостоятельного изучения](box.html).
 
-[Модель визуального форматирования](http://www.umade.ru/resources/specifications/CSS2/visuren.html)
+[Модель визуального форматирования](http://www.umade.ru/resources/specifications/CSS2/visuren.html). 
+Вот [html для самостоятельного изучения](visual-model.html).
 
 Использование средств разработки, встроенных в браузеры для отладки верстки.
 
