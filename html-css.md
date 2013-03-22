@@ -20,7 +20,7 @@ HTML и CSS
 
 Теория
 -------
-Введение про [http://habrahabr.ru/post/45296/](Reset.css)
+Введение про [Reset.css](http://habrahabr.ru/post/45296/)
 
 [Box model](http://www.w3.org/TR/CSS2/box.html)
 [Модель визуального форматирования](http://www.umade.ru/resources/specifications/CSS2/visuren.html)
