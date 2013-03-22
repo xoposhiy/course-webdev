@@ -69,7 +69,7 @@ http://caniuse.com/
 
 Надстройки над CSS на примере [Less](http://lesscss.org/)
 
-CSS-фреймворки на примере [Twitter Bootstrap](twitter.github.com/bootstrap/)
+CSS-фреймворки на примере [Twitter Bootstrap](https://twitter.github.com/bootstrap/)
 
 Минификация CSS и JS.
 
