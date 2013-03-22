@@ -9,7 +9,9 @@ HTML и CSS
 Задача 1
 --------
 Сверстать, правильно выбрав html-элементы основываясь на семантике.
+
 ![Макет text](/html-css/text.png)
+
 [Текст можно взять тут](/html-css/text.txt)
 
 
@@ -23,6 +25,7 @@ HTML и CSS
 Введение про [Reset.css](http://habrahabr.ru/post/45296/)
 
 [Box model](http://www.w3.org/TR/CSS2/box.html)
+
 [Модель визуального форматирования](http://www.umade.ru/resources/specifications/CSS2/visuren.html)
 
 Использование средств разработки, встроенных в браузеры для отладки верстки.
@@ -34,24 +37,29 @@ HTML и CSS
 Задача 2
 --------
 Не меняя HTML написать стили так, чтобы страница выглядели (и вела себя при клике) вот так:
+
 ![Макет 9-grid](/html-css/9grid.png)
+
 [Исходный Html](/html-css/9grid.txt)
 
 
 Задача 3
 --------
 Сделать три варианта двухколоночной верстки так, чтобы html у всех трех вариантов был одинаковый.
+
 ![Макет columns](/html-css/columns.png)
 
 Задача 4
 --------
 Сверстать прогресс-бар.
+
 ![Макет progressbar](/html-css/progressbar.png)
 
 
 Задача 5
 --------
 Сверстать макет будущего сайта
+
 ![Макет layout](/html-css/layout.png)
 
 Теория
