@@ -55,9 +55,9 @@ var date = cal.getDate();
 
 Теория
 ------
-Ajax & JSON.
-
-Handmade-шаблоны.
+* Ajax & JSON.
+* Handmade-шаблоны.
+* [History API](http://javascript.ru/blog/pharrell/AJAX-history-API)
 
 Задача 3
 --------
