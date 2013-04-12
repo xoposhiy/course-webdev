@@ -32,3 +32,5 @@
   </tr>
 </table>
 
+[Табличка успеваемости (весна 2013)](https://docs.google.com/spreadsheet/ccc?key=0AlW9g0IejZAVdGllY3dSTkMyU0Itdzc2bDdHaWhBSHc&usp=sharing)
+
